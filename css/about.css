@@ -1,0 +1,498 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: #BBA1AD;
+}
+
+/* Bắt đầu header */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #090925;
+    z-index: 1;
+}
+
+nav .navbar {
+    height: 100%;
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 50px;
+}
+
+nav .navbar .logo a {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+nav .navbar .nav-links {
+    height: 100%;
+    line-height: 50px;
+}
+
+nav .navbar .nav-links .links {
+    display: flex;
+}
+
+nav .navbar .nav-links .links li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0 14px;
+}
+
+nav .navbar .nav-links .links li a {
+    font-family: 'Assistant', sans-serif;
+    height: 100%;
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+nav .navbar .nav-links .links li .arrow {
+    height: 100%;
+    width: 22px;
+    text-align: center;
+    color: #fff;
+    line-height: 50px;
+    transition: all 0.3s ease;
+}
+
+.navbar .nav-links .links li:hover .lesson-arrow {
+    transform: rotate(180deg);
+}
+
+.navbar .nav-links .links .sub-menu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: #090925;
+    line-height: 40px;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.navbar .nav-links .links .sub-menu li {
+    padding: 0 22px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar .nav-links .links .sub-menu li a {
+    font-size: 15px;
+    font: 500;
+}
+
+.navbar .nav-links .links li:hover  {
+    display: block;
+    background:#303057; /* maybe */
+    
+}
+
+.navbar .nav-links .links li:hover .lesson-sub-menu {
+    display: block;
+    background:#4a4b7b; /* maybe */
+    
+}
+
+.navbar .nav-links .links li:hover .lesson-sub-menu {
+    display: block;
+}
+
+.navbar .login-box,
+.navbar .search-box {
+    position: relative;
+    height: 40px;
+    width: 40px;
+}
+
+.navbar .login-box:hover{
+    background:#303057;
+}
+.navbar .search-box:hover  {
+    display: block;
+    background:#303057; /* maybe */
+    
+}
+
+.navbar .login-box i,
+.navbar .search-box i {
+    color: #fff;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.navbar .search-box .input-box {
+    height: 60px;
+    width: 300px;
+    background: #090925;
+    position: absolute;
+    top: 80px;
+    right: calc(100% - 40px);
+    border-radius: 6px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.navbar.showInput .search-box .input-box {
+    opacity: 1;
+    pointer-events: auto;
+    top: 65px;
+}
+
+.navbar .search-box .input-box::before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background: #090925;
+    right: 10px;
+    top: -6px;
+    transform: rotate(45deg);
+}
+
+.navbar .search-box .input-box input {
+    position: absolute;
+    height: 35px;
+    width: 280px;
+    z-index: 98;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.navbar .ti-menu,
+.nav-links .sidebar-logo .logo-name,
+.nav-links .sidebar-logo .ti-close {
+    display: none;
+}
+
+@media (max-width: 990px) {
+    nav .navbar {
+        max-width: 100%;
+        padding: 0 25px;
+    }
+
+    nav .navbar .logo a {
+        font-size: 26px;
+    }
+
+    nav .navbar .nav-links .links li {
+        padding: 0 10px;
+    }
+
+    nav .navbar .nav-links .links li a {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 800px) {
+    nav .navbar .nav-links {
+        font-family: 'Assistant', sans-serif;
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        max-width: 270px;
+        width: 100%;
+        background: #090925;
+        padding: 20px;
+        line-height: 40px;
+        transition: all 0.5s ease;
+        z-index: 100;
+    }
+
+    nav .navbar .nav-links .sidebar-logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navbar .ti-menu,
+    .nav-links .sidebar-logo .logo-name,
+    .nav-links .sidebar-logo .ti-close {
+        color: #fff;
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .navbar .ti-menu,
+    .nav-links .sidebar-logo .logo-name,
+    .nav-links .sidebar-logo .ti-close {
+        display: block;
+    }
+
+    nav .navbar .nav-links .links {
+        display: block;
+        margin-top: 20px;
+    }
+
+    nav .navbar .nav-links .links li {
+        display: block;
+        border-bottom: none;
+    }
+
+    .navbar .nav-links .links .sub-menu {
+        display: none;
+        position: relative;
+        top: 0;
+        left: 0;
+        box-shadow: none;
+    }
+
+    .navbar .nav-links .links .sub-menu li {
+        border-bottom: none;
+    }
+
+    .navbar .nav-links .links li:hover .lesson-sub-menu {
+        display: none;  
+    }
+
+    nav .navbar .nav-links .links li .arrow {
+        line-height: 40px;
+    }
+
+    .navbar .nav-links .links li:hover .lesson-arrow{
+        transform: rotate(0deg);
+    }
+
+    .navbar .nav-links.show1 .links .sub-menu.lesson-sub-menu {
+        display: block;
+    }
+
+    .navbar .nav-links.show1 .links li .lesson-arrow {
+        transform: rotate(180deg);
+    }
+}
+
+@media (max-width: 370px) {
+    nav .navbar .nav-links {
+        max-width: 100%;
+    }
+}
+/* Color */
+:root{
+    --color-primary: #6c63ff;
+    --color-success: #00bf8e;
+    --color-warning: #f7c94b;
+    --color-danger: #f75842;
+    --color-danger-variant: rgba(247,88,66,0.4);
+    --color-white: #fff;
+    --color-light: rgba(255,255,255,0.7);
+    --color-black: #000;
+    --color-bg: #1f2641;
+    --color-bg1: #2e3267;
+    --color-bg2: #424890;
+
+    --container-width-lg: 76%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    --transition: all 400ms ease;
+}
+
+/* <!--Phần Achievements --> */
+
+.about_achievements{
+    color:var(--color-white) ;
+    line-height: 20px;
+}
+h1{
+    font-size: 35px;
+}
+h3{
+    font-size: 25px;
+}
+
+/* thay dổi hình 1 */
+.imageChange {
+    max-width: 400px;
+    height: auto;
+    margin-left: 100px;
+}
+.about_achievements{
+    margin-top: 7rem;
+}
+
+.about_achievements-container{
+    display: grid;
+    grid-template-columns: 35% 50%;
+    gap: 5rem;
+}
+
+.about_achievements-right > p {
+    margin: 1.6rem 0 2.5rem;
+}
+
+.achievements_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.achievements_card {
+    background:var(--color-bg1);
+    padding: 1.6rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.achievements_card:hover{
+    background: var(--color-bg2);
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+.achievements_icon{
+    background: var(--color-danger);
+    padding: 0.6rem;
+    border-radius: 1rem; /*bo vien*/
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+.achievements_card:nth-child(2) .achievements_icon{
+    background: var(--color-success);
+}
+.achievements_card:nth-child(3) .achievements_icon{
+    background: var(--color-primary);
+}
+
+.achievements_card p{
+    margin-top: 1rem; /*kc 2 noi dung sl & thongtin*/ 
+}
+/* <!-- ===Kết thúc Phần Achievements=== --> */
+
+/* <!-- ===Phần Teams=== --> */
+.team{
+    color:var(--color-white) ;
+    margin-top: 5rem;
+    padding: 50px;
+}
+h2{
+    text-align: center;
+    line-height: 150px;
+}
+.team{
+    background: var(--color-bg1);
+    box-shadow: inset 0 0 3rem rgb(0, 0, 0, 0.5);
+}
+.team_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.team_member{
+    background: var(--color-bg2);
+    padding: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+.team_member:hover{
+    background: transparent;
+    border-color: var(--color-primary);
+}
+.team_member-image img{
+    filter: saturate(0);
+    background-size: cover;
+}
+.team_member:hover img{
+    filter: saturate(1);
+}
+.team_member-info * {
+    text-align: center;
+    margin-top: 1.4rem;
+}
+.team_member-info p {
+    color: var(--color-light);
+}
+.team_member-socials{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-primary);
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: -2rem 0 2rem rgba(0, 0, 0, 0.3);
+    background: var(--color-white);
+}
+.team_member-socials a{
+    padding: 1rem;
+}
+.team_member:hover .team_member-socials{
+    right: 0;
+}
+
+/* cần chỉnh cái hình nó nhỏ nữa là xong */
+/* <!-- ===Kết thúc Phần Teams=== --> */
+/* --Media queuies(tables)-- */
+/* Setup trên nhiều giao diện */
+@media screen and (max-width: 1024px){
+    .about_achievements{
+        margin-top: 2rem;
+    }
+    .about_achievements-container{
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+    .about_achievements-left{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .team_container{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+    .team_member{
+        padding: 1rem;
+    }
+    
+}
+@media screen and (max-width: 600px){
+    .achievements_card{
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
+    }
+    .team_container{
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
+    }
+    .team_member{
+        padding: 0;
+    }
+    .team_member p {
+        margin-top: 1.5rem;
+    }
+}
