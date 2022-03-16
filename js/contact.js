@@ -14,3 +14,16 @@ btn.addEventListener('click', () => {
       message => alert(message)
     );
 })
+
+// search
+let navbar = document.querySelector(".navbar");
+let searchBox = document.querySelector(".search-box .ti-search");
+//<i class="bx ti-clos"></i>
+searchBox.addEventListener("click", ()=>{
+    navbar.classList.toggle("showInput");
+    if(navbar.classList.contains("showInput")) {
+        searchBox.classList.replace("ti-search","ti-close")
+    }else {
+        searchBox.classList.replace("ti-close","ti-search");
+    }
+})

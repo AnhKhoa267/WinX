@@ -106,7 +106,6 @@ nav .navbar .nav-links .links li .arrow {
 .navbar .nav-links .links li:hover  {
     display: block;
     background:#303057; /* maybe */
-    
 }
 
 .navbar .nav-links .links li:hover .lesson-sub-menu {
