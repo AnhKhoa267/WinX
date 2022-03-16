@@ -1,0 +1,679 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: #BBA1AD;
+}
+
+/* Bắt đầu header */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #090925;
+    z-index: 1;
+}
+
+nav .navbar {
+    height: 100%;
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 50px;
+}
+
+nav .navbar .logo a {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+nav .navbar .nav-links {
+    height: 100%;
+    line-height: 50px;
+}
+
+nav .navbar .nav-links .links {
+    display: flex;
+}
+
+nav .navbar .nav-links .links li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0 14px;
+}
+
+nav .navbar .nav-links .links li a {
+    font-family: 'Assistant', sans-serif;
+    height: 100%;
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+nav .navbar .nav-links .links li .arrow {
+    height: 100%;
+    width: 22px;
+    text-align: center;
+    color: #fff;
+    line-height: 50px;
+    transition: all 0.3s ease;
+}
+
+.navbar .nav-links .links li:hover .lesson-arrow {
+    transform: rotate(180deg);
+}
+
+.navbar .nav-links .links .sub-menu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: #090925;
+    line-height: 40px;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.navbar .nav-links .links .sub-menu li {
+    padding: 0 22px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar .nav-links .links .sub-menu li a {
+    font-size: 15px;
+    font: 500;
+}
+
+.navbar .nav-links .links li:hover  {
+    display: block;
+    background:#303057; /* maybe */
+    
+}
+
+.navbar .nav-links .links li:hover .lesson-sub-menu {
+    display: block;
+    background:#4a4b7b; /* maybe */
+    
+}
+
+.navbar .nav-links .links li:hover .lesson-sub-menu {
+    display: block;
+}
+
+.navbar .login-box,
+.navbar .search-box {
+    position: relative;
+    height: 40px;
+    width: 40px;
+}
+
+.navbar .login-box:hover{
+    background:#303057;
+}
+.navbar .search-box:hover  {
+    display: block;
+    background:#303057; /* maybe */
+    
+}
+
+.navbar .login-box i,
+.navbar .search-box i {
+    color: #fff;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.navbar .search-box .input-box {
+    height: 60px;
+    width: 300px;
+    background: #090925;
+    position: absolute;
+    top: 80px;
+    right: calc(100% - 40px);
+    border-radius: 6px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.navbar.showInput .search-box .input-box {
+    opacity: 1;
+    pointer-events: auto;
+    top: 65px;
+}
+
+.navbar .search-box .input-box::before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background: #090925;
+    right: 10px;
+    top: -6px;
+    transform: rotate(45deg);
+}
+
+.navbar .search-box .input-box input {
+    position: absolute;
+    height: 35px;
+    width: 280px;
+    z-index: 98;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.navbar .ti-menu,
+.nav-links .sidebar-logo .logo-name,
+.nav-links .sidebar-logo .ti-close {
+    display: none;
+}
+
+@media (max-width: 990px) {
+    nav .navbar {
+        max-width: 100%;
+        padding: 0 25px;
+    }
+
+    nav .navbar .logo a {
+        font-size: 26px;
+    }
+
+    nav .navbar .nav-links .links li {
+        padding: 0 10px;
+    }
+
+    nav .navbar .nav-links .links li a {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 800px) {
+    nav .navbar .nav-links {
+        font-family: 'Assistant', sans-serif;
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        max-width: 270px;
+        width: 100%;
+        background: #090925;
+        padding: 20px;
+        line-height: 40px;
+        transition: all 0.5s ease;
+        z-index: 100;
+    }
+
+    nav .navbar .nav-links .sidebar-logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navbar .ti-menu,
+    .nav-links .sidebar-logo .logo-name,
+    .nav-links .sidebar-logo .ti-close {
+        color: #fff;
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .navbar .ti-menu,
+    .nav-links .sidebar-logo .logo-name,
+    .nav-links .sidebar-logo .ti-close {
+        display: block;
+    }
+
+    nav .navbar .nav-links .links {
+        display: block;
+        margin-top: 20px;
+    }
+
+    nav .navbar .nav-links .links li {
+        display: block;
+        border-bottom: none;
+    }
+
+    .navbar .nav-links .links .sub-menu {
+        display: none;
+        position: relative;
+        top: 0;
+        left: 0;
+        box-shadow: none;
+    }
+
+    .navbar .nav-links .links .sub-menu li {
+        border-bottom: none;
+    }
+
+    .navbar .nav-links .links li:hover .lesson-sub-menu {
+        display: none;  
+    }
+
+    nav .navbar .nav-links .links li .arrow {
+        line-height: 40px;
+    }
+
+    .navbar .nav-links .links li:hover .lesson-arrow{
+        transform: rotate(0deg);
+    }
+
+    .navbar .nav-links.show1 .links .sub-menu.lesson-sub-menu {
+        display: block;
+    }
+
+    .navbar .nav-links.show1 .links li .lesson-arrow {
+        transform: rotate(180deg);
+    }
+}
+
+@media (max-width: 370px) {
+    nav .navbar .nav-links {
+        max-width: 100%;
+    }
+}
+
+/* xong header */
+
+/* Bắt đầu slider */
+
+.banner
+{
+    position: relative;
+    min-height: 100vh;
+    background: url(https://gstatic.gvn360.com/2021/07/Thanh-pho-ve-dem_-4-scaled.jpg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner h2
+{
+    font-size: 3em;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+.banner h2 span
+{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.banner h4 
+{
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 500;
+}
+
+/* Kết thúc slider */
+
+/* Bắt đàu lesson */
+
+#chuyennganh,
+#nangcao,
+#coban {
+    background: #bba1ad;
+}
+
+.headingwhite {
+    font-family: 'Lobster', cursive;
+    color: #090925;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+#coban #content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#chuyennganh #content a,
+#nangcao #content1 a,
+#coban #content a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#coban #content .khoahocBX {
+    padding: 40px 20px;
+    background: #222;
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+    border-radius: 16px;
+}
+
+#coban #content .khoahocBX:hover {
+    background:  #4a4b7b;
+}
+
+#coban #content .khoahocBX img {
+    max-width: 80px;
+    filter: invert(1);
+}
+
+#coban #content .khoahocBX h2 {
+    font-size: 20px;
+    font-weight: 600; 
+    font-family: 'Assistant', sans-serif;
+}
+
+#coban #content .khoahocBX p {
+    text-align: left;
+    font-family: 'Smooch Sans', sans-serif;
+    font-size: 23px;
+}
+
+#nangcao #content1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#nangcao #content1 .khoahocBX {
+    padding: 40px 20px;
+    background: #222;
+    color: #fff;
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+    border-radius: 16px;
+}
+
+#nangcao #content1 .khoahocBX:hover {
+    background:#4a4b7b;
+}
+
+#nangcao #content1 .khoahocBX img {
+    max-width: 80px;
+    filter: invert(1);
+}
+
+#nangcao #content1 .khoahocBX h2 {
+    font-size: 20px;
+    font-weight: 600; 
+    font-family: 'Assistant', sans-serif;
+}
+
+#nangcao #content1 .khoahocBX p {
+    text-align: left;
+    font-family: 'Smooch Sans', sans-serif;
+    font-size: 23px;
+}
+
+#chuyennganh #content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#chuyennganh #content .khoahocBX {
+    padding: 40px 20px;
+    background: #222;
+    color: #fff;
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+    border-radius: 16px;
+}
+
+#chuyennganh #content .khoahocBX:hover {
+    background:#4a4b7b;
+}
+
+#chuyennganh #content .khoahocBX img {
+    max-width: 80px;
+    filter: invert(1);
+}
+
+#chuyennganh #content .khoahocBX h2 {
+    font-size: 20px;
+    font-weight: 600; 
+    font-family: 'Assistant', sans-serif;
+}
+
+#chuyennganh #content .khoahocBX p {
+    text-align: left;
+    font-family: 'Smooch Sans', sans-serif;
+    font-size: 23px;
+}
+
+/* Kết thúc lesson */
+
+/* Bắt đầu nút back to top */
+.ti-arrow-up {
+    background: #fff;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #1f1f1f;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s;
+}
+
+.ti-arrow-up.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+/* Kết thúc nút back to top */
+
+/* Bắt đầu Contact */
+
+#contact {
+    padding: 50px 50px 10px;
+}
+
+#contact h2 {
+    text-align: center;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.contact-content {
+    margin-top: 48px;
+}   
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.4;    
+}
+
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form {
+    font-size: 15px; 
+}
+
+.contact-form #subject,
+.contact-form #message,
+.contact-form #email,
+.contact-form #name {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.contact-form #btn {
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+    padding: 10px 16px;
+    float: right;
+}
+
+/* Kết thúc Contact */
+
+/* Banner 2 */
+
+.banner2
+{
+    position: relative;
+    min-height: 60vh;
+    background: url(https://gstatic.gvn360.com/2021/07/Thanh-pho-ve-dem_-21.jpg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Ket thuc Banner2 */
+
+/* Feedback */
+
+#feedback {
+    /* background: #9a7787; */
+    background-color: #bba1ad;
+}
+
+.rev-section {
+    margin: auto;
+    padding: 0 10px;
+    max-width: 1100px;
+    text-align: center;
+}
+  
+.title {
+    font-family: 'Lobster', cursive;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-size: 2.5rem;
+    color: #090925;
+    margin-bottom: .5rem;
+}
+
+.reviews {
+    margin: 0.5rem auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.review {
+    margin: 0 1rem;
+    min-width: 300px;
+    flex: 1;
+}
+
+.body-review {
+    background-color: rgb(0, 0, 0);
+    padding: 2.5rem;
+    /* box-shadow: 2px 2px 10px 3px rgb(46, 45, 45);  */
+     border-radius: 25px; 
+} 
+
+.name-review {
+    font-family: 'Assistant', sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: .25rem;
+}
+
+.place-review{
+    color:  #fff;
+    font-style: italic;
+}
+
+.rating {
+    color: rgb(253, 180, 42);
+    margin: 1rem 0;
+}
+
+.desc-review{
+    font-family: 'Smooch Sans', sans-serif;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    color: #fff;
+    font-size: 20px;
+}
+@media(max-width:1060px){
+    .review{
+        width:45%;
+        padding: 10px;
+    }
+}
+@media(max-width:790px){
+    .review{
+        width:100%;
+    }
+    .name-review{
+        font-size:1.4rem;
+    }
+} 
+
+/* Ket thuc Feedback */
