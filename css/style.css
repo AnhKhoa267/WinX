@@ -339,10 +339,9 @@ nav .navbar .nav-links .links li .arrow {
 
 /* Bắt đàu lesson */
 
-#chuyennganh,
-#nangcao,
-#coban {
-    background: #bba1ad;
+.lesson1,
+.lesson2{ 
+    margin: 2%;
 }
 
 .headingwhite {
@@ -353,132 +352,60 @@ nav .navbar .nav-links .links li .arrow {
     padding-bottom: 10px;
     font-size: 1.5rem;
 }
-
-#coban #content {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
+   
+.card{
+    width: 20%;
+    display: inline-block;
+    box-shadow: 2px 2px 20px black;
+    border-radius: 5px; 
+    margin: 2%;
+}
+  
+.image img{
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+ 
+.title{
+    text-align: center;
+    padding: 10px;
+}
+  
+h1{
+    font-size: 20px;
+}
+  
+.des{
+    font-family: 'Smooch Sans', sans-serif;
+    padding: 3px;
+    text-align: center;
+    padding-top: 10px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+  
+button{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding:10px;
 }
 
-#chuyennganh #content a,
-#nangcao #content1 a,
-#coban #content a {
-    color: #fff;
+button a {
     text-decoration: none;
+    color: #000;
+}
+  
+button:hover{
+    background-color: #4a4b7b;
+    color: white;
+    transition: .5s;
+    cursor: pointer;
 }
 
-#coban #content .khoahocBX {
-    padding: 40px 20px;
-    background: #222;
-    max-width: 340px;
-    margin: 20px;
-    text-align: center;
-    transition: 0.5s;
-    border-radius: 16px;
-}
-
-#coban #content .khoahocBX:hover {
-    background:  #4a4b7b;
-}
-
-#coban #content .khoahocBX img {
-    max-width: 80px;
-    height: 40px;
-    filter: invert(1);
-}
-
-#coban #content .khoahocBX h2 {
-    font-size: 20px;
-    font-weight: 600; 
-    font-family: 'Assistant', sans-serif;
-}
-
-#coban #content .khoahocBX p {
-    text-align: left;
-    font-family: 'Smooch Sans', sans-serif;
-    font-size: 23px;
-}
-
-#nangcao #content1 {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-#nangcao #content1 .khoahocBX {
-    padding: 40px 20px;
-    background: #222;
-    color: #fff;
-    max-width: 340px;
-    margin: 20px;
-    text-align: center;
-    transition: 0.5s;
-    border-radius: 16px;
-}
-
-#nangcao #content1 .khoahocBX:hover {
-    background:#4a4b7b;
-}
-
-#nangcao #content1 .khoahocBX img {
-    max-width: 80px;
-    height: 40px;
-    filter: invert(1);
-}
-
-#nangcao #content1 .khoahocBX h2 {
-    font-size: 20px;
-    font-weight: 600; 
-    font-family: 'Assistant', sans-serif;
-}
-
-#nangcao #content1 .khoahocBX p {
-    text-align: left;
-    font-family: 'Smooch Sans', sans-serif;
-    font-size: 23px;
-}
-
-#chuyennganh #content {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-#chuyennganh #content .khoahocBX {
-    padding: 40px 20px;
-    background: #222;
-    color: #fff;
-    max-width: 340px;
-    margin: 20px;
-    text-align: center;
-    transition: 0.5s;
-    border-radius: 16px;
-}
-
-#chuyennganh #content .khoahocBX:hover {
-    background:#4a4b7b;
-}
-
-#chuyennganh #content .khoahocBX img {
-    max-width: 80px;
-    height: 40px;
-    filter: invert(1);
-}
-
-#chuyennganh #content .khoahocBX h2 {
-    font-size: 20px;
-    font-weight: 600; 
-    font-family: 'Assistant', sans-serif;
-}
-
-#chuyennganh #content .khoahocBX p {
-    text-align: left;
-    font-family: 'Smooch Sans', sans-serif;
-    font-size: 23px;
-}
 
 /* Kết thúc lesson */
 

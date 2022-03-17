@@ -8,7 +8,7 @@
 }
 
 body {
-    background: #f0f8ff;
+    background-image: url(https://gstatic.gvn360.com/2020/05/street_night_city_buildings_140672_1920x1080.jpg) ;
 }
 
 nav {
@@ -144,7 +144,7 @@ display: block;
 
 .navbar .search-box .input-box {
     height: 60px;
-    width: 330px;
+    width: 300px;
     background: #090925;
     position: absolute;
     top: 80px;
@@ -225,7 +225,7 @@ display: block;
 }
 
 h1 {
-    color: #474678;
+    color: #fff;
     text-align: center;
     padding-top: 20px;
 }
@@ -245,6 +245,7 @@ textarea {
     display: grid;
     grid-template-columns: 100%;
     padding-top: 15px;
+    color: #fff;
 }
 
 button {
