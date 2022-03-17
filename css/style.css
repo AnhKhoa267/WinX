@@ -384,6 +384,7 @@ nav .navbar .nav-links .links li .arrow {
 
 #coban #content .khoahocBX img {
     max-width: 80px;
+    height: 40px;
     filter: invert(1);
 }
 
@@ -423,6 +424,7 @@ nav .navbar .nav-links .links li .arrow {
 
 #nangcao #content1 .khoahocBX img {
     max-width: 80px;
+    height: 40px;
     filter: invert(1);
 }
 
@@ -462,6 +464,7 @@ nav .navbar .nav-links .links li .arrow {
 
 #chuyennganh #content .khoahocBX img {
     max-width: 80px;
+    height: 40px;
     filter: invert(1);
 }
 
