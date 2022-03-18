@@ -40,7 +40,10 @@ nav .navbar .logo a {
     font-size: 30px;
     font-weight: 600;
     text-decoration: none;
+    font-family: "Poppins", sans-serif;
 }
+
+
 
 nav .navbar .nav-links {
     height: 100%;
@@ -336,17 +339,108 @@ nav .navbar .nav-links .links li .arrow {
 }
 
 /* Kết thúc slider */
-
-/* Bắt đàu lesson */
-
+ /* Lesson 1 */
+#tinhoc,
+#ltweb,
 #chuyennganh,
 #nangcao,
 #coban {
-    background: #bd8dba;
+   background: #bd8dba;
+}
+ 
+.container {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+ 
+.card {
+   background: #fff;
+   width: 300px;
+   margin: 50px;
+   border-radius: 15px;
+}
+ 
+.card-image {
+   height: 300px;
+   margin-bottom: 15px;
+   background-size: cover;
+   border-radius: 15px 15px 0 0;
+}
+ 
+.coban1 {
+   background-image: url(../image/coban1.png);
+}
+ 
+.coban2 {
+   background-image: url(../image/coban2.png);
+}
+ 
+.coban3 {
+   background-image: url('https://media.discordapp.net/attachments/942604239509811230/954275655569268797/unknown.png');
+}
+ 
+.coban4 {
+   background-image: url('https://media.discordapp.net/attachments/942604239509811230/954349445896605726/unknown.png');
+}
+ 
+.coban5 {
+   background-image: url('https://media.discordapp.net/attachments/942604239509811230/954349585621454898/unknown.png');
 }
 
-/* Tiêu đề */
+.nangcao1 {
+    background-image: url('https://media.discordapp.net/attachments/942604239509811230/954275655569268797/unknown.png');
+}
 
+.nangcao2 {
+    background-image: url('https://media.discordapp.net/attachments/942604239509811230/954350397890363402/unknown.png');
+}
+
+.nangcao3 {
+    background-image: url('https://media.discordapp.net/attachments/942604239509811230/954351874893574184/unknown.png');
+}
+
+.nangcao4 {
+    background-image: url('https://media.discordapp.net/attachments/942604239509811230/954352181715271750/unknown.png');
+}
+
+.nangcao5 {
+    background-image: url('https://media.discordapp.net/attachments/942604239509811230/954352560230236201/unknown.png');
+}
+
+.chuyennganh1 {
+    background-image: url('https://media.discordapp.net/attachments/942604239509811230/954353843272044564/unknown.png');
+}
+
+.chuyennganh2 {
+    background-image: url('https://media.discordapp.net/attachments/942604239509811230/954354268356354088/unknown.png');
+}
+
+.chuyennganh3 {
+    background-image: url('https://media.discordapp.net/attachments/942604239509811230/954354640542117918/unknown.png');
+}
+
+.card h2 {
+    text-align: center;
+    font-size: 1.2rem;
+}
+  
+.card p {
+    padding: 10px;
+}
+  
+.card a {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+  
+.card a:hover {
+    background-color: #090925; 
+}
 .headingwhite {
     font-family: 'Lobster', cursive;
     color: #090925;
@@ -355,239 +449,8 @@ nav .navbar .nav-links .links li .arrow {
     padding-bottom: 10px;
     font-size: 1.5rem;
 }
+ /* end Lesson 1 */
 
-/* Cơ bản */
-
-#coban #content {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-#tinhoc #content,
-#ltweb #content,
-#chuyennganh #content,
-#nangcao #content,
-#coban #content {
-    color: #fff;
-    text-decoration: none;
-}
-
-#coban #content .khoahocBX {
-    padding: 40px 20px;
-    background: #222;
-    max-width: 340px;
-    margin: 20px;
-    text-align: center;
-    transition: 0.5s;
-    border-radius: 16px;
-}
-
-#coban #content .khoahocBX:hover {
-    background:  #4a4b7b;
-}
-
-#coban #content .khoahocBX img {
-    max-width: 80px;
-    filter: invert(1);
-}
-
-#coban #content .khoahocBX h2 {
-    font-size: 20px;
-    font-weight: 600; 
-    font-family: 'Assistant', sans-serif;
-}
-
-#coban #content .khoahocBX p {
-    text-align: left;
-    font-family: 'Smooch Sans', sans-serif;
-    font-size: 23px;
-}
-
-/* Nâng cao */
-
-#nangcao #content {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-#nangcao #content .khoahocBX {
-    padding: 40px 20px;
-    background: #222;
-    color: #fff;
-    max-width: 340px;
-    margin: 20px;
-    text-align: center;
-    transition: 0.5s;
-    border-radius: 16px;
-}
-
-#nangcao #content .khoahocBX:hover {
-    background:#4a4b7b;
-}
-
-#nangcao #content .khoahocBX img {
-    max-width: 80px;
-    filter: invert(1);
-}
-
-#nangcao #content .khoahocBX h2 {
-    font-size: 20px;
-    font-weight: 600; 
-    font-family: 'Assistant', sans-serif;
-}
-
-#nangcao #content .khoahocBX p {
-    text-align: left;
-    font-family: 'Smooch Sans', sans-serif;
-    font-size: 23px;
-}
-
-/* Chuyên ngành */
-
-#chuyennganh #content {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-#chuyennganh #content .khoahocBX {
-    padding: 40px 20px;
-    background: #222;
-    color: #fff;
-    max-width: 340px;
-    margin: 20px;
-    text-align: center;
-    transition: 0.5s;
-    border-radius: 16px;
-}
-
-#chuyennganh #content .khoahocBX:hover {
-    background:#4a4b7b;
-}
-
-#chuyennganh #content .khoahocBX img {
-    max-width: 80px;
-    filter: invert(1);
-}
-
-#chuyennganh #content .khoahocBX h2 {
-    font-size: 20px;
-    font-weight: 600; 
-    font-family: 'Assistant', sans-serif;
-}
-
-#chuyennganh #content .khoahocBX p {
-    text-align: left;
-    font-family: 'Smooch Sans', sans-serif;
-    font-size: 23px;
-}
-
-/* Lập trình Web */
-
-#ltweb #content {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-#ltweb #content .khoahocBX {
-    padding: 40px 20px;
-    background: #222;
-    max-width: 340px;
-    margin: 20px;
-    text-align: center;
-    transition: 0.5s;
-    border-radius: 16px;
-}
-
-#ltweb #content .khoahocBX:hover {
-    background:  #4a4b7b;
-}
-
-#ltweb #content .khoahocBX img {
-    max-width: 80px;
-    filter: invert(1);
-}
-
-#ltweb #content .khoahocBX h2 {
-    font-size: 20px;
-    font-weight: 600; 
-    font-family: 'Assistant', sans-serif;
-}
-
-#ltweb #content .khoahocBX p {
-    text-align: left;
-    font-family: 'Smooch Sans', sans-serif;
-    font-size: 23px;
-}
-
-/* Tin học Văn phòng */
-
-#tinhoc #content {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-#tinhoc #content .khoahocBX {
-    padding: 40px 20px;
-    background: #222;
-    max-width: 340px;
-    margin: 20px;
-    text-align: center;
-    transition: 0.5s;
-    border-radius: 16px;
-}
-
-#tinhoc #content .khoahocBX:hover {
-    background:  #4a4b7b;
-}
-
-#tinhoc #content .khoahocBX img {
-    max-width: 80px;
-    filter: invert(1);
-}
-
-#tinhoc #content .khoahocBX h2 {
-    font-size: 20px;
-    font-weight: 600; 
-    font-family: 'Assistant', sans-serif;
-}
-
-#tinhoc #content .khoahocBX p {
-    text-align: left;
-    font-family: 'Smooch Sans', sans-serif;
-    font-size: 23px;
-}
-  
-button{
-    margin-top: 50px;
-    margin-bottom: 10px;
-    background-color: #000;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding:10px;
-    color: red;  
-}
-
-button a {
-    text-decoration: none;
-}
-  
-button:hover{
-    background-color: #4a4b7b;
-    transition: .5s;
-    cursor: pointer;
-}
-
-/* Kết thúc lesson */
 
 /* Bắt đầu nút back to top */
 .ti-arrow-up {
@@ -704,85 +567,116 @@ button:hover{
 
 /* Ket thuc Banner2 */
 
-/* Feedback */
 
-#feedback {
-    /* background: #9a7787; */
-    background-color: #bba1ad;
+.banner3
+{
+    position: relative;
+    min-height: 60vh;
+    background: url(https://gvn360.com/wp-content/uploads/2020/05/Gearvn_th%C3%A0nh-ph%E1%BB%91-v%E1%BB%81-%C4%91%C3%AAm_-32-1024x576.jpg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.rev-section {
+
+
+
+
+/* footer */
+/* Footer */
+
+.container-footer {
+    max-width: 1170px;
     margin: auto;
-    padding: 0 10px;
-    max-width: 1100px;
-    text-align: center;
-}
+  }
   
-.title {
-    font-family: 'Lobster', cursive;
-    padding-top: 50px;
-    padding-bottom: 10px;
-    font-size: 2.5rem;
-    color: #090925;
-    margin-bottom: .5rem;
-}
-
-.reviews {
-    margin: 0.5rem auto;
+  .row-footer {
     display: flex;
     flex-wrap: wrap;
-}
-
-.review {
-    margin: 0 1rem;
-    min-width: 300px;
-    flex: 1;
-}
-
-.body-review {
-    background-color: rgb(0, 0, 0);
-    padding: 2.5rem;
-    /* box-shadow: 2px 2px 10px 3px rgb(46, 45, 45);  */
-     border-radius: 25px; 
-} 
-
-.name-review {
-    font-family: 'Assistant', sans-serif;
-    font-size: 1.5rem;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .footer {
+    background-color: #24262B;
+    padding: 70px 0;
+  }
+  
+  .footer-col {
+    width: 25%;
+    padding: 0 15px;
+  }
+  
+  .footer-col h4 {
+    font-size: 18px;
     color: #fff;
-    margin-bottom: .25rem;
-}
-
-.place-review{
-    color:  #fff;
-    font-style: italic;
-}
-
-.rating {
-    color: rgb(253, 180, 42);
-    margin: 1rem 0;
-}
-
-.desc-review{
-    font-family: 'Smooch Sans', sans-serif;
-    line-height: 1.5rem;
-    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  
+  .footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #E91E63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  
+  .footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  
+  .footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
     color: #fff;
-    font-size: 20px;
-}
-@media(max-width:1060px){
-    .review{
-        width:45%;
-        padding: 10px;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  
+  .footer-col ul li a:hover {
+    color: #fff;
+    padding-left: 8px;
+  }
+  
+  .footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.5s ease;
+  }
+  
+  .footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #fff;
+  }
+  
+  @media(max-width: 767px) {
+    .footer-col {
+      width: 50%;
+      margin-bottom: 30px;
     }
-}
-@media(max-width:790px){
-    .review{
-        width:100%;
+  }
+  @media(max-width: 574px) {
+    .footer-col {
+      width: 100%;
     }
-    .name-review{
-        font-size:1.4rem;
-    }
-} 
-
-/* Ket thuc Feedback */
+  }
