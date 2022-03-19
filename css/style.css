@@ -650,43 +650,42 @@ nav .navbar .nav-links .links li .arrow {
 
 
 
-/* footer */
-/* Footer */
+/* Bắt đầu Footer */
 
 .container-footer {
     max-width: 1170px;
     margin: auto;
-  }
-  
-  .row-footer {
+}
+
+.row-footer {
     display: flex;
     flex-wrap: wrap;
-  }
-  
-  ul {
+}
+
+ul {
     list-style: none;
-  }
-  
-  .footer {
+}
+
+.footer {
     background-color: #090925;
     padding: 70px 0;
-  }
-  
-  .footer-col {
+}
+
+.footer-col {
     width: 25%;
     padding: 0 15px;
-  }
-  
-  .footer-col h4 {
+}
+
+.footer-col h4 {
     font-size: 18px;
     color: #fff;
     text-transform: capitalize;
     margin-bottom: 35px;
     font-weight: 500;
     position: relative;
-  }
-  
-  .footer-col h4::before {
+}
+
+.footer-col h4::before {
     content: '';
     position: absolute;
     left: 0;
@@ -695,13 +694,13 @@ nav .navbar .nav-links .links li .arrow {
     height: 2px;
     box-sizing: border-box;
     width: 50px;
-  }
-  
-  .footer-col ul li:not(:last-child) {
+}
+
+.footer-col ul li:not(:last-child) {
     margin-bottom: 10px;
-  }
-  
-  .footer-col ul li a {
+}
+
+.footer-col ul li a {
     font-size: 16px;
     text-transform: capitalize;
     color: #fff;
@@ -710,14 +709,14 @@ nav .navbar .nav-links .links li .arrow {
     color: #bbb;
     display: block;
     transition: all 0.3s ease;
-  }
-  
-  .footer-col ul li a:hover {
+}
+
+.footer-col ul li a:hover {
     color: #fff;
     padding-left: 8px;
-  }
-  
-  .footer-col .social-links a {
+}
+
+.footer-col .social-links a {
     display: inline-block;
     height: 40px;
     width: 40px;
@@ -728,21 +727,23 @@ nav .navbar .nav-links .links li .arrow {
     border-radius: 50%;
     color: #fff;
     transition: all 0.5s ease;
-  }
-  
-  .footer-col .social-links a:hover {
+}
+
+.footer-col .social-links a:hover {
     color: #24262b;
     background-color: #fff;
-  }
-  
-  @media(max-width: 767px) {
+}
+
+@media(max-width: 767px) {
     .footer-col {
-      width: 50%;
-      margin-bottom: 30px;
+    width: 50%;
+    margin-bottom: 30px;
     }
-  }
-  @media(max-width: 574px) {
+}
+@media(max-width: 574px) {
     .footer-col {
-      width: 100%;
+    width: 100%;
     }
-  }
+}
+
+/* Kết thúc Footer */
